@@ -1,3 +1,12 @@
+/*This piece of Code for the Transmission of the data packet from the NRF module connected to Arduino Nano
+  to the central Arduno Mega NRF Module.
+
+  Contributors:- Shubh Agrawal, Sudarshan Sharma, Adarsh Kosta
+  Contact:- sudarshansharma04@gmail.com
+*/
+
+
+
 #include <Wire.h>
 #include <SPI.h>
 #include "nRF24L01.h"
@@ -28,7 +37,7 @@ typedef struct
 
 data Data;
 
-RF24 radio(9,10);
+RF24 radio(9,10);//Change this accordingly if you want it to use with Arduino Mega.
 const uint64_t pipes[6] = { 0xF0F0F0F0E0LL ,0xF0F0F0F0E1LL, 0xF0F0F0F0E2LL, 0xF0F0F0F0E3LL , 0xF0F0F0F0E4LL ,0xF0F0F0F0E5LL };
 
 
@@ -133,7 +142,8 @@ Wire.write(0x6B);                                                               
 Wire.write(0);                                                                           //awakes MCU by sending 0 to above register address
 Wire.endTransmission(true);
 
-Data.id = 2;
+Data.id = 2;                                                                            // This is the Identifier of the Daughter NRF modules, for different id different
+                                                                                        // addresses of the pipe is used for the transmission of the data.
 
 radio.begin();
 radio.setDataRate(RF24_2MBPS);

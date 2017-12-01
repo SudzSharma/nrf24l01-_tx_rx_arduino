@@ -3,6 +3,8 @@
   Moreover it has code for obtaining angle from the MPU.
 
     Contributors:- Shubh Agrawal, Sudarshan Sharma, Adarsh Kosta
+     Contact:- sudarshansharma04@gmail.com
+
 */
 
 #include <Wire.h>

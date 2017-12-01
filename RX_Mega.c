@@ -2,7 +2,7 @@
   This piece of code for recieving the data from 6 nrf modules using Arduino Mega.
   Moreover it has code for obtaining angle from the MPU.
 
-    Contributors:- Shubh Agrawal, Sudarshan Sharma, Adarsh Kosta
+    Contributors:-Sudarshan Sharma, Shubh Agrawal, Adarsh Kosta
      Contact:- sudarshansharma04@gmail.com
 
 */

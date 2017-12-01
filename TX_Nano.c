@@ -1,7 +1,7 @@
 /*This piece of Code for the Transmission of the data packet from the NRF module connected to Arduino Nano
   to the central Arduno Mega NRF Module.
 
-  Contributors:- Shubh Agrawal, Sudarshan Sharma, Adarsh Kosta
+  Contributors:- Sudarshan Sharma, Shubh Agrawal, Adarsh Kosta
   Contact:- sudarshansharma04@gmail.com
 */
 
